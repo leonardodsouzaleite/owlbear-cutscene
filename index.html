@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121318" />
+    <title>Owlbear Cutscene</title>
+  </head>
+  <body>
+    <main class="panel-shell">
+      <header class="brand-row">
+        <div class="brand-icon" aria-hidden="true">▶</div>
+        <div>
+          <p class="eyebrow">EXTENSÃO PARA OWLBEAR RODEO</p>
+          <h1>Cutscene</h1>
+        </div>
+      </header>
+
+      <section id="status" class="status-box" role="status" aria-live="polite">
+        Conectando ao Owlbear Rodeo…
+      </section>
+
+      <section id="gm-panel" class="panel-section" hidden>
+        <div class="section-heading">
+          <div>
+            <h2>Nova apresentação</h2>
+            <p>Escolha um vídeo e inicie para toda a sala.</p>
+          </div>
+          <span class="role-chip">MESTRE</span>
+        </div>
+
+        <label for="title">Nome da cutscene</label>
+        <input id="title" type="text" maxlength="90" placeholder="Ex.: O surgimento da criatura" />
+
+        <label for="video-url">Link direto do vídeo</label>
+        <input id="video-url" type="url" inputmode="url" placeholder="https://exemplo.com/video.mp4" autocomplete="url" />
+        <p class="field-help">Use um link HTTPS que abra diretamente um arquivo de vídeo. Links de páginas do YouTube, Google Drive ou páginas de compartilhamento normalmente não servem.</p>
+
+        <div class="two-columns">
+          <div>
+            <label for="delay">Preparação antes de começar</label>
+            <select id="delay">
+              <option value="6">6 segundos</option>
+              <option value="8" selected>8 segundos</option>
+              <option value="10">10 segundos</option>
+              <option value="15">15 segundos</option>
+              <option value="20">20 segundos</option>
+            </select>
+          </div>
+          <div class="button-column">
+            <label aria-hidden="true">&nbsp;</label>
+            <button id="save-video" class="button secondary" type="button">Salvar na biblioteca</button>
+          </div>
+        </div>
+
+        <button id="start" class="button primary" type="button" disabled>
+          <span aria-hidden="true">▶</span> Iniciar para todos
+        </button>
+
+        <div class="divider"></div>
+
+        <div class="section-heading compact">
+          <div>
+            <h2>Minha biblioteca</h2>
+            <p>Atalhos salvos neste navegador.</p>
+          </div>
+        </div>
+        <div class="library-row">
+          <select id="library" aria-label="Vídeos salvos">
+            <option value="">Nenhum vídeo salvo</option>
+          </select>
+          <button id="delete-video" class="button danger-outline" type="button" title="Remover vídeo selecionado" aria-label="Remover vídeo selecionado">×</button>
+        </div>
+        <p class="field-help">A biblioteca é local ao seu navegador. Ela não é compartilhada automaticamente com outros mestres.</p>
+      </section>
+
+      <section id="player-panel" class="waiting-card" hidden>
+        <div class="waiting-icon" aria-hidden="true">◉</div>
+        <h2>Aguardando o mestre</h2>
+        <p>Quando o mestre iniciar uma cutscene, ela será aberta automaticamente nesta tela.</p>
+      </section>
+
+      <footer>
+        <span>Owlbear Cutscene · versão 1.0.0</span>
+        <span>Use somente vídeos que você tem direito de exibir.</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/panel.js"></script>
+  </body>
+</html>

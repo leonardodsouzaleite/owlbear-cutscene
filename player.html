@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <title>Cutscene</title>
+  </head>
+  <body class="player-body">
+    <main id="player-root" class="player-root">
+      <video id="cutscene-video" playsinline preload="auto"></video>
+      <div id="loading" class="player-message">
+        <div class="loader"></div>
+        <p>Preparando a apresentação…</p>
+      </div>
+      <div id="blocked" class="player-message" hidden>
+        <div class="message-symbol">▶</div>
+        <h1>Pronto para assistir</h1>
+        <p>O navegador bloqueou a reprodução automática. Clique abaixo para iniciar o vídeo.</p>
+        <button id="manual-play" class="button primary" type="button">Reproduzir vídeo</button>
+      </div>
+      <div id="error" class="player-message" hidden>
+        <div class="message-symbol">!</div>
+        <h1>Não foi possível reproduzir</h1>
+        <p id="error-text">Verifique o link do vídeo e tente novamente.</p>
+      </div>
+      <div class="cinema-top">
+        <span class="live-dot"></span>
+        <span id="cutscene-title">Cutscene</span>
+      </div>
+      <div id="gm-controls" class="cinema-controls" hidden>
+        <button id="pause" class="control-button" type="button">Pausar</button>
+        <button id="resume" class="control-button" type="button">Retomar</button>
+        <button id="stop" class="control-button stop-button" type="button">Encerrar</button>
+      </div>
+    </main>
+    <script type="module" src="/src/player.js"></script>
+  </body>
+</html>

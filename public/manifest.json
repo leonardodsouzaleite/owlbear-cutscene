@@ -1,0 +1,22 @@
+{
+  "name": "Owlbear Cutscene",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Reproduza cutscenes em tela cheia e sincronizadas para todos os jogadores da sala.",
+  "author": "Leonardo Leite",
+  "icon": "/icon.svg",
+  "action": {
+    "title": "Cutscene",
+    "icon": "/icon.svg",
+    "popover": "/",
+    "width": 390,
+    "height": 650
+  },
+  "background_url": "/background.html",
+  "permissions": [
+    {
+      "name": "autoplay",
+      "reason": "Permitir que o vídeo da cutscene comece automaticamente quando o mestre iniciar a apresentação para a sala."
+    }
+  ]
+}
