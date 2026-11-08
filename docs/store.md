@@ -2,8 +2,8 @@
 title: Owlbear Cutscene
 description: Play synchronized full-screen video cutscenes for everyone in your Owlbear Rodeo room.
 author: Leonardo Leite
-image: https://owlbear-cutscene.leonardosouzaleite2020.workers.dev/store-hero.svg
-icon: https://owlbear-cutscene.leonardosouzaleite2020.workers.dev/icon.svg
+image: https://raw.githubusercontent.com/leonardodsouzaleite/owlbear-cutscene/main/public/store-hero.svg
+icon: https://raw.githubusercontent.com/leonardodsouzaleite/owlbear-cutscene/main/public/icon.svg
 tags:
   - tool
 manifest: https://owlbear-cutscene.leonardosouzaleite2020.workers.dev/manifest.json
