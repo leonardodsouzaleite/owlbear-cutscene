@@ -6,6 +6,22 @@ Extensão experimental para o Owlbear Rodeo que abre uma cutscene em tela cheia 
 **Idioma da interface:** português (Brasil)  
 **Tecnologias:** JavaScript, Vite e `@owlbear-rodeo/sdk`.
 
+## Instalação pública
+
+A versão pública está hospedada no Cloudflare Workers. Para instalar a extensão:
+
+1. Abra o Owlbear Rodeo e acesse o gerenciador de extensões no seu perfil.
+2. Escolha **Add Extension**.
+3. Cole o manifesto abaixo e confirme.
+4. Habilite Owlbear Cutscene na sala.
+
+**Link de instalação:**
+`https://owlbear-cutscene.leonardosouzaleite2020.workers.dev/manifest.json`
+
+O link acima é o endereço do manifesto, não o link da página do projeto. Compartilhe-o com outros mestres para que instalem a extensão.
+
+A página de apresentação preparada para o catálogo oficial do Owlbear Rodeo está em [docs/store.md](docs/store.md). A inclusão no catálogo depende de um Pull Request aceito pelo projeto oficial.
+
 ## O que esta versão faz
 
 - Mostra um painel de controle para o mestre.
